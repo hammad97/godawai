@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.6
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Oct 01, 2017 at 10:27 AM
+- Server version: 10.1.24-MariaDB
+- PHP Version: 7.0.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="id2770899_godawaidb" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="admin_login">
+                CREATE TABLE `admin_login` (
+                  `user_id` bigint(8) NOT NULL AUTO_INCREMENT,
+                  `user_name` varchar(255) NOT NULL,
+                  `user_password` varchar(255) NOT NULL,
+                  PRIMARY KEY (`user_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=7065 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="orders">
+                CREATE TABLE `orders` (
+                  `order_id` bigint(255) NOT NULL AUTO_INCREMENT,
+                  `p_names` varchar(250) NOT NULL,
+                  `cus_name` varchar(250) NOT NULL,
+                  `contact_no` varchar(255) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `address` varchar(255) NOT NULL,
+                  `zip_code` varchar(255) NOT NULL,
+                  `country` varchar(255) NOT NULL,
+                  `details` varchar(255) NOT NULL,
+                  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  `quantity` varchar(255) NOT NULL,
+                  PRIMARY KEY (`order_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="products">
+                CREATE TABLE `products` (
+                  `product_id` bigint(255) NOT NULL AUTO_INCREMENT,
+                  `product_name` varchar(255) NOT NULL,
+                  `details` varchar(255) NOT NULL,
+                  `price` varchar(255) NOT NULL,
+                  `c_price` varchar(255) NOT NULL,
+                  `brand` varchar(255) NOT NULL,
+                  `tags` varchar(255) NOT NULL,
+                  `product_type` varchar(255) NOT NULL,
+                  `image` varchar(255) NOT NULL,
+                  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`product_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'id2770899_godawaidb'
+    -->
+    <database name="id2770899_godawaidb">
+        <!-- Table admin_login -->
+        <table name="admin_login">
+            <column name="user_id">7060</column>
+            <column name="user_name">hammadjaffery</column>
+            <column name="user_password">hammad12345</column>
+        </table>
+        <table name="admin_login">
+            <column name="user_id">7063</column>
+            <column name="user_name">zoyarehman</column>
+            <column name="user_password">zoya12345</column>
+        </table>
+        <table name="admin_login">
+            <column name="user_id">7064</column>
+            <column name="user_name">vajiharaza</column>
+            <column name="user_password">vajiha12345</column>
+        </table>
+        <!-- Table orders -->
+        <table name="orders">
+            <column name="order_id">4</column>
+            <column name="p_names">Accu Chek Glucometer Active</column>
+            <column name="cus_name">Hammad Jaffery</column>
+            <column name="contact_no">03146647899</column>
+            <column name="email">testing124@gmail.com</column>
+            <column name="address">acnsadasdjkla</column>
+            <column name="zip_code">75100</column>
+            <column name="country">pakistan</column>
+            <column name="details">bla hb lasnldads</column>
+            <column name="time">2017-09-04 20:28:41</column>
+            <column name="quantity">ajsdlkjaslkdjlaks</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">5</column>
+            <column name="p_names">Sancos Syrup</column>
+            <column name="cus_name">Hammad Jaffery</column>
+            <column name="contact_no">03146647899</column>
+            <column name="email">testing124@gmail.com</column>
+            <column name="address">acnsadasdjkla</column>
+            <column name="zip_code">75100</column>
+            <column name="country">pakistan</column>
+            <column name="details">bla hb lasnldads</column>
+            <column name="time">2017-09-04 20:28:41</column>
+            <column name="quantity">ajsdlkjaslkdjlaks</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">6</column>
+            <column name="p_names">Brufen Syrup</column>
+            <column name="cus_name">test1</column>
+            <column name="contact_no">0611656</column>
+            <column name="email">test2@gmail.com</column>
+            <column name="address">afafaf</column>
+            <column name="zip_code">75100</column>
+            <column name="country">pakistan</column>
+            <column name="details">alkjflkajsf</column>
+            <column name="time">2017-09-06 05:47:47</column>
+            <column name="quantity">aslashfa</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">7</column>
+            <column name="p_names">Flagyl</column>
+            <column name="cus_name">test1</column>
+            <column name="contact_no">0611656</column>
+            <column name="email">test2@gmail.com</column>
+            <column name="address">afafaf</column>
+            <column name="zip_code">75100</column>
+            <column name="country">pakistan</column>
+            <column name="details">alkjflkajsf</column>
+            <column name="time">2017-09-06 05:47:47</column>
+            <column name="quantity">aslashfa</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">8</column>
+            <column name="p_names">Exforge</column>
+            <column name="cus_name">Zoya Rehman</column>
+            <column name="contact_no">03331276234</column>
+            <column name="email">K152333@nu.edu.pk</column>
+            <column name="address">Abcd</column>
+            <column name="zip_code">76271</column>
+            <column name="country">pakistan</column>
+            <column name="details"></column>
+            <column name="time">2017-09-09 10:55:17</column>
+            <column name="quantity">90 boxes</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">9</column>
+            <column name="p_names">Brufen Syrup</column>
+            <column name="cus_name">Zoya Rehman</column>
+            <column name="contact_no">03331276234</column>
+            <column name="email">K152333@nu.edu.pk</column>
+            <column name="address">Abcd</column>
+            <column name="zip_code">76271</column>
+            <column name="country">pakistan</column>
+            <column name="details"></column>
+            <column name="time">2017-09-09 10:55:17</column>
+            <column name="quantity">90 boxes</column>
+        </table>
+        <table name="orders">
+            <column name="order_id">10</column>
+            <column name="p_names">Lanoxin</column>
+            <column name="cus_name">Zoya Rehman</column>
+            <column name="contact_no">03331276234</column>
+            <column name="email">K152333@nu.edu.pk</column>
+            <column name="address">Abcd</column>
+            <column name="zip_code">76271</column>
+            <column name="country">pakistan</column>
+            <column name="details"></column>
+            <column name="time">2017-09-09 10:55:17</column>
+            <column name="quantity">90 boxes</column>
+        </table>
+        <!-- Table products -->
+        <table name="products">
+            <column name="product_id">61</column>
+            <column name="product_name">Panadol Extra</column>
+            <column name="details">It is a medication used to treat pain and fever.[1] It is typically used for mild to moderate pain.[1] The quality of the evidence regarding the use for fever relief in children is poor.[11] It is often sold in combination with other ingredients such as i</column>
+            <column name="price">16</column>
+            <column name="c_price">20</column>
+            <column name="brand">GSK</column>
+            <column name="tags">fever tablets tablet medicine allergycoldcoughdisease panadol sale gsk panadolextra</column>
+            <column name="product_type">Tablet Medicine</column>
+            <column name="image">1504541149_panadol-regular-800x450.jpg</column>
+            <column name="time">2017-09-23 14:18:43</column>
+        </table>
+        <table name="products">
+            <column name="product_id">63</column>
+            <column name="product_name">Flagyl</column>
+            <column name="details">pain-killer</column>
+            <column name="price">25</column>
+            <column name="c_price">30</column>
+            <column name="brand">Sanofi Aventis</column>
+            <column name="tags">tablets medicines tablet stomachdisease new flagyl sanofiaventis</column>
+            <column name="product_type">Tablet Medicine</column>
+            <column name="image">1504554016_flagyl.jpg</column>
+            <column name="time">2017-09-23 14:19:28</column>
+        </table>
+        <table name="products">
+            <column name="product_id">64</column>
+            <column name="product_name">Sancos Syrup</column>
+            <column name="details">reduces cough problems</column>
+            <column name="price">50</column>
+            <column name="c_price">60</column>
+            <column name="brand">Novatris</column>
+            <column name="tags">syrups medicines syrup environmentdisease sale sancos novatris</column>
+            <column name="product_type">syrups Medicine</column>
+            <column name="image">1504554134_sancos.jpg</column>
+            <column name="time">2017-09-23 14:20:06</column>
+        </table>
+        <table name="products">
+            <column name="product_id">65</column>
+            <column name="product_name">Accu Chek Glucometer Active</column>
+            <column name="details">checks sugar levels in blood</column>
+            <column name="price">2500</column>
+            <column name="c_price">3000</column>
+            <column name="brand">Accu Chek</column>
+            <column name="tags">equip testing accu glucometer bloodtest sugarlevel new</column>
+            <column name="product_type">Equipment</column>
+            <column name="image">1504554262_accucheck.jpg</column>
+            <column name="time">2017-09-23 15:44:01</column>
+        </table>
+        <table name="products">
+            <column name="product_id">66</column>
+            <column name="product_name">Brufen Syrup</column>
+            <column name="details">flu syrup</column>
+            <column name="price">49</column>
+            <column name="c_price">55</column>
+            <column name="brand">Abbott</column>
+            <column name="tags">medicines syrup syrups allergycoldcoughdisease sale brufen abbott</column>
+            <column name="product_type">Medicines Syrup</column>
+            <column name="image">1504676489_brufin.jpg</column>
+            <column name="time">2017-09-23 14:17:17</column>
+        </table>
+        <table name="products">
+            <column name="product_id">67</column>
+            <column name="product_name">Plavix 75mg</column>
+            <column name="details"> It is used to prevent blood clots in patients with heart disease.</column>
+            <column name="price">	700</column>
+            <column name="c_price">850</column>
+            <column name="brand">Sanofi</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease sanofi plavix</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504949866_plavix.jpg</column>
+            <column name="time">2017-09-23 14:48:24</column>
+        </table>
+        <table name="products">
+            <column name="product_id">68</column>
+            <column name="product_name">Byscard</column>
+            <column name="details">It is also used to treat and prevent blood clots</column>
+            <column name="price">273</column>
+            <column name="c_price">300</column>
+            <column name="brand">Searle</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease byscard searle</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504950386_byscard.jpg</column>
+            <column name="time">2017-09-23 14:49:04</column>
+        </table>
+        <table name="products">
+            <column name="product_id">69</column>
+            <column name="product_name">Coversyl</column>
+            <column name="details">It is used in the treatment of high blood pressure</column>
+            <column name="price">230</column>
+            <column name="c_price">250</column>
+            <column name="brand">Servier</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease servier coversyl</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504950688_sercov669_101502798593.jpg</column>
+            <column name="time">2017-09-23 14:49:32</column>
+        </table>
+        <table name="products">
+            <column name="product_id">70</column>
+            <column name="product_name">Lanoxin</column>
+            <column name="details">It is used to treat heart failure and other types of irregular heartbeats </column>
+            <column name="price">35</column>
+            <column name="c_price">40</column>
+            <column name="brand">gsk</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease lanoxin gsk new</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504950953_no-image.png</column>
+            <column name="time">2017-09-23 15:43:37</column>
+        </table>
+        <table name="products">
+            <column name="product_id">71</column>
+            <column name="product_name">Exforge</column>
+            <column name="details">Exforge is used to treat high blood pressure. </column>
+            <column name="price">2,157</column>
+            <column name="c_price">2,180</column>
+            <column name="brand">Novartis</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease exforge novartis</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504951295__1_1481131970.jpg</column>
+            <column name="time">2017-09-23 14:51:34</column>
+        </table>
+        <table name="products">
+            <column name="product_id">72</column>
+            <column name="product_name">Softin Syrup</column>
+            <column name="details"> Loratadine 5mg/5ml Syrup is indicated for the symptomatic treatment of allergic rhinitis and chronic idiopathic urticaria in adults and children 
+</column>
+            <column name="price">40</column>
+            <column name="c_price">56</column>
+            <column name="brand">Werrick</column>
+            <column name="tags">syrups syrup oralvial allergycoldcoughdisease medicines werrick softin</column>
+            <column name="product_type">Syrups oralvial Medicines</column>
+            <column name="image">1504951337_softin.jpg</column>
+            <column name="time">2017-09-23 14:52:08</column>
+        </table>
+        <table name="products">
+            <column name="product_id">73</column>
+            <column name="product_name">Lescol Xl 8omg</column>
+            <column name="details">It is used along with a proper diet to help lower bad cholesterol and fats.</column>
+            <column name="price">1,950</column>
+            <column name="c_price">2000</column>
+            <column name="brand">Novartis</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease lescol novartis</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504951802_no-image.png</column>
+            <column name="time">2017-09-23 14:52:33</column>
+        </table>
+        <table name="products">
+            <column name="product_id">75</column>
+            <column name="product_name">Mepresor 100mg</column>
+            <column name="details">It is used to treat angina </column>
+            <column name="price">248</column>
+            <column name="c_price">260</column>
+            <column name="brand">Novartis</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease mepresor novartis</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504952059__1_1481131975.jpg</column>
+            <column name="time">2017-09-23 14:53:00</column>
+        </table>
+        <table name="products">
+            <column name="product_id">76</column>
+            <column name="product_name">Diovan 160mg</column>
+            <column name="details">It is used to control high blood pressure</column>
+            <column name="price">2,010</column>
+            <column name="c_price">2,030</column>
+            <column name="brand">Novartis</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease diovan novartis</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504952291_novdio75_101485344262.jpg</column>
+            <column name="time">2017-09-23 14:53:56</column>
+        </table>
+        <table name="products">
+            <column name="product_id">77</column>
+            <column name="product_name">Brufen 200mg</column>
+            <column name="details">Brufen 200mg Tablet is used in fever, headache, arthralgia, myalgia, dental pain, post operative pain, pain during menstruation, osteoarthritis, rheumatoid arthritis, ankylosing spondylitis and gout.</column>
+            <column name="price">10</column>
+            <column name="c_price">15</column>
+            <column name="brand">Abbot</column>
+            <column name="tags">allergycoldcoughdisease tablet tablets oralvial medicines brufen abbott</column>
+            <column name="product_type">tablet tablets oralvial medicines</column>
+            <column name="image">1504952483_brufen-600.jpg</column>
+            <column name="time">2017-09-23 14:55:13</column>
+        </table>
+        <table name="products">
+            <column name="product_id">78</column>
+            <column name="product_name">Softin 10mg</column>
+            <column name="details">This combination medication is used to temporarily relieve symptoms caused by the common cold, flu, allergies, or other breathing illnesses </column>
+            <column name="price">60</column>
+            <column name="c_price">70</column>
+            <column name="brand">Werrick</column>
+            <column name="tags">tablet tablets oralvial allergycoldcoughdisease medicines softin werrick</column>
+            <column name="product_type">tablet tablets oralvial medicines</column>
+            <column name="image">1504952660_softin10mg.jpg</column>
+            <column name="time">2017-09-23 14:56:42</column>
+        </table>
+        <table name="products">
+            <column name="product_id">79</column>
+            <column name="product_name">Valtec AM 5/80</column>
+            <column name="details">It is used to help heart function after a heart attack.</column>
+            <column name="price">190</column>
+            <column name="c_price">200</column>
+            <column name="brand">Tabros Pharma</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease valtec tabros tabrospharma new</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504952813__1_1481131994.jpg</column>
+            <column name="time">2017-09-23 15:44:22</column>
+        </table>
+        <table name="products">
+            <column name="product_id">80</column>
+            <column name="product_name">Actidil</column>
+            <column name="details">Signs of an allergic reaction, like rash; hives; itching; red, swollen, blistered, or peeling skin with or without fever; wheezing; tightness in the chest or throat</column>
+            <column name="price">20</column>
+            <column name="c_price">40</column>
+            <column name="brand">GlaxoSmithKline</column>
+            <column name="tags">allergycoldcoughdisease syrups syrup vial medicines medicine gsk actidil</column>
+            <column name="product_type">syrups syrup vial medicines medicine </column>
+            <column name="image">1504952964_actidil.jpg</column>
+            <column name="time">2017-09-23 14:58:10</column>
+        </table>
+        <table name="products">
+            <column name="product_id">81</column>
+            <column name="product_name">Co-Tasmi 80mg</column>
+            <column name="details">It is used in the management of high blood pressure.</column>
+            <column name="price">477</column>
+            <column name="c_price">490</column>
+            <column name="brand">Getz Pharma</column>
+            <column name="tags">tablets tablet medicines medicine cardiacdisease getzpharma getz cotasmi tasmi</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504953109_download (1).jpeg</column>
+            <column name="time">2017-09-23 14:59:18</column>
+        </table>
+        <table name="products">
+            <column name="product_id">82</column>
+            <column name="product_name">Zantac 150mg</column>
+            <column name="details">It is used to treat stomach and duodenal (intestinal) ulcers, and prevent them from recurring.</column>
+            <column name="price">88</column>
+            <column name="c_price">115</column>
+            <column name="brand">gsk</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease gsk zantac</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504960097_zantac.jpg</column>
+            <column name="time">2017-09-23 14:59:44</column>
+        </table>
+        <table name="products">
+            <column name="product_id">83</column>
+            <column name="product_name">Maxolon 10mg</column>
+            <column name="details">Maxolon is used to treat nausea and vomiting.</column>
+            <column name="price">20</column>
+            <column name="c_price">60</column>
+            <column name="brand">gsk</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease maxolon gsk</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504960826_Maxolon 10mg.jpg</column>
+            <column name="time">2017-09-23 15:00:28</column>
+        </table>
+        <table name="products">
+            <column name="product_id">84</column>
+            <column name="product_name">Esso 40mg</column>
+            <column name="details">It decrease the amount of acid your stomach makes</column>
+            <column name="price">306</column>
+            <column name="c_price">510</column>
+            <column name="brand">shaigan</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease esso shaigan</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504964770_esso.jpg</column>
+            <column name="time">2017-09-23 15:01:01</column>
+        </table>
+        <table name="products">
+            <column name="product_id">85</column>
+            <column name="product_name">Famot 20mg</column>
+            <column name="details"> Famot is used to treat and prevent ulcers in the stomach and intestines. </column>
+            <column name="price">174</column>
+            <column name="c_price">250</column>
+            <column name="brand">shaigan</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease famot shaigan new</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504965029_Famot 20mg.jpg</column>
+            <column name="time">2017-09-23 15:44:41</column>
+        </table>
+        <table name="products">
+            <column name="product_id">86</column>
+            <column name="product_name">Losec 20mg</column>
+            <column name="details">It is used to treat conditions where reduction in acid secretion is required for proper healing, including stomach and intestinal ulcers.</column>
+            <column name="price">698</column>
+            <column name="c_price">800</column>
+            <column name="brand">Barrett</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease losec barrett</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504965298_Losec 20mg.jpg</column>
+            <column name="time">2017-09-23 15:01:56</column>
+        </table>
+        <table name="products">
+            <column name="product_id">87</column>
+            <column name="product_name">Navidoxine</column>
+            <column name="details"> It is used to treat or prevent nausea, vomiting, and dizziness caused by motion sickness</column>
+            <column name="price">13</column>
+            <column name="c_price">50</column>
+            <column name="brand">AGP</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease navidoxine agp new</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504965448_Navidoxine.jpg</column>
+            <column name="time">2017-09-23 15:45:05</column>
+        </table>
+        <table name="products">
+            <column name="product_id">88</column>
+            <column name="product_name">Librax</column>
+            <column name="details">It is used to treat stomach ulcers and intestinal infections.</column>
+            <column name="price">40</column>
+            <column name="c_price">100</column>
+            <column name="brand">Martin Dow</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease librax martindow martin</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504965707_Librax.jpg</column>
+            <column name="time">2017-09-23 15:02:53</column>
+        </table>
+        <table name="products">
+            <column name="product_id">89</column>
+            <column name="product_name">Zofran 8mg</column>
+            <column name="details">This medication is used alone or with other medications to prevent nausea and vomiting</column>
+            <column name="price">3796</column>
+            <column name="c_price">4500</column>
+            <column name="brand">gsk</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease zofran gsk</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504965952_zofran.jpg</column>
+            <column name="time">2017-09-23 15:03:35</column>
+        </table>
+        <table name="products">
+            <column name="product_id">90</column>
+            <column name="product_name">Nexum 40mg Capsule</column>
+            <column name="details">Nexum decreases the amount of acid produced in the stomach</column>
+            <column name="price">323</column>
+            <column name="c_price">400</column>
+            <column name="brand">Getz Pharma</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease nexum getzpharma</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504966100_Nexum 40mg Capsule.jpg</column>
+            <column name="time">2017-09-23 15:05:00</column>
+        </table>
+        <table name="products">
+            <column name="product_id">91</column>
+            <column name="product_name">Risek 40mg Capsule</column>
+            <column name="details">It decreases the amount of acid produced in the stomach. </column>
+            <column name="price">280</column>
+            <column name="c_price">350</column>
+            <column name="brand">Getz Pharma</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease risek getzpharma</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1504966277_risek.jpg</column>
+            <column name="time">2017-09-23 15:05:36</column>
+        </table>
+        <table name="products">
+            <column name="product_id">92</column>
+            <column name="product_name">OMRON RS1 DIGITAL WRIST BLOOD PRESSURE MONITOR</column>
+            <column name="details">It used to measure blood pressure.</column>
+            <column name="price">5,799</column>
+            <column name="c_price">6,200</column>
+            <column name="brand">omron</column>
+            <column name="tags">equip equipment testing omron wristbloodpressure bptest bloodpressuretest</column>
+            <column name="product_type">equip equipment</column>
+            <column name="image">1505148322_omron.jpg</column>
+            <column name="time">2017-09-23 15:06:13</column>
+        </table>
+        <table name="products">
+            <column name="product_id">93</column>
+            <column name="product_name">Certeza Blood Pressure Monitor BM-407 with Adapter</column>
+            <column name="details">Used to measure Blood pressure.</column>
+            <column name="price">2,699</column>
+            <column name="c_price">3,000</column>
+            <column name="brand">Certeza</column>
+            <column name="tags">equip equipment testing certeza bloodpressuretest bptest</column>
+            <column name="product_type">equip equipment</column>
+            <column name="image">1505148536_BM.png</column>
+            <column name="time">2017-09-23 15:06:51</column>
+        </table>
+        <table name="products">
+            <column name="product_id">94</column>
+            <column name="product_name">Rigix 10mg</column>
+            <column name="details">Rigix is suitable in allergic conditions.
+Rigix is primarily indicated in the treatment of allergies that last throughout the year or are seasonal (blocked/runny nose, sneezing, itching)
+Each ml of Rigix oral solution contains 1 mg of cetirizine dihydro</column>
+            <column name="price">135</column>
+            <column name="c_price">150</column>
+            <column name="brand">AGP</column>
+            <column name="tags">medicines tablet tablets allergycoldcoughdisease rigix agp</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506081842_rigix 10mg.jpg</column>
+            <column name="time">2017-09-23 15:07:19</column>
+        </table>
+        <table name="products">
+            <column name="product_id">95</column>
+            <column name="product_name">Zyrtec 10mg</column>
+            <column name="details">Zyrtec is primarily indicated in the treatment of allergies that last throughout the year or are seasonal (blocked/runny nose, sneezing, itching).</column>
+            <column name="price">60</column>
+            <column name="c_price">70</column>
+            <column name="brand">Gsk</column>
+            <column name="tags">allergycoldcoughdisease medicines tablet tablets zyrtec gsk new</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506082351_zyrtec.jpg</column>
+            <column name="time">2017-09-23 15:07:44</column>
+        </table>
+        <table name="products">
+            <column name="product_id">96</column>
+            <column name="product_name">Ansaid</column>
+            <column name="details">Used in treatment of rheumatoid diseases, osteoarthrosis (joint disorder) and ankylosing spondylitis (joint disorder).
+</column>
+            <column name="price">30</column>
+            <column name="c_price">45</column>
+            <column name="brand">Pfizer</column>
+            <column name="tags">allergycoldcoughdisease medicines tablet tablets ansaid pfizer</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506082595_ansaid.jpg</column>
+            <column name="time">2017-09-23 15:08:23</column>
+        </table>
+        <table name="products">
+            <column name="product_id">97</column>
+            <column name="product_name">BETNESOL-N DROPS</column>
+            <column name="details">It is used for reducing inflammation.</column>
+            <column name="price">34</column>
+            <column name="c_price">60</column>
+            <column name="brand">gsk</column>
+            <column name="tags">drops medicines medicine eyeeardisease betnesol gsk</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506082745_betnasol.jpg</column>
+            <column name="time">2017-09-23 15:08:51</column>
+        </table>
+        <table name="products">
+            <column name="product_id">98</column>
+            <column name="product_name">Zyloric100mg</column>
+            <column name="details">Zyloric is primarily indicated in the treatment of gouty arthritis (extreme pain in joints due to the deposition of uric acid crystals), skin tophi (skin nodules due to the deposition of uric acid crystals in the skin), kidney diseases due to the high lev</column>
+            <column name="price">20</column>
+            <column name="c_price">30</column>
+            <column name="brand">Gsk</column>
+            <column name="tags"> medicines tablet tablets bonesjointsmusclesdisease zyloric gsk new</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506084111_zyloric.jpg</column>
+            <column name="time">2017-09-23 15:09:25</column>
+        </table>
+        <table name="products">
+            <column name="product_id">99</column>
+            <column name="product_name">DEXATOB EAR DROP</column>
+            <column name="details">This medication is used to treat bacterial ear infections. This ear drop works by stopping the growth of bacteria and reducing ear swelling and discomfort.</column>
+            <column name="price">127</column>
+            <column name="c_price">175</column>
+            <column name="brand">sante</column>
+            <column name="tags">drops medicines medicine eyeeardisease dexatob sante sale</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506084957_dexatob.jpg</column>
+            <column name="time">2017-09-23 15:10:03</column>
+        </table>
+        <table name="products">
+            <column name="product_id">100</column>
+            <column name="product_name">XALATAN</column>
+            <column name="details">Xalatan (latanoprost) reduces pressure in the eye by increasing the amount of fluid that drains from the eye.It is used to treat certain types of glaucoma and other causes of high pressure inside the eye.</column>
+            <column name="price">1,272</column>
+            <column name="c_price">1500</column>
+            <column name="brand">Pfizer</column>
+            <column name="tags">drops medicines medicine eyeeardisease xalatan pfizer</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506085235_xalatan.jpg</column>
+            <column name="time">2017-09-23 15:10:32</column>
+        </table>
+        <table name="products">
+            <column name="product_id">101</column>
+            <column name="product_name">Systane</column>
+            <column name="details">This medication is used to relieve dry, irritated eyes. Common causes for dry eyes include wind, sun, heating/air conditioning, computer use/reading, and certain medications.</column>
+            <column name="price">514</column>
+            <column name="c_price">600</column>
+            <column name="brand">AGP</column>
+            <column name="tags">drops medicines medicine eyeeardisease systane agp</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506085423_systane.jpg</column>
+            <column name="time">2017-09-23 15:11:28</column>
+        </table>
+        <table name="products">
+            <column name="product_id">102</column>
+            <column name="product_name">CURINE 15ML</column>
+            <column name="details">It is used to ease allergy signs and to treat eye irritation.</column>
+            <column name="price">80</column>
+            <column name="c_price">130</column>
+            <column name="brand">Sante</column>
+            <column name="tags">drops medicines medicine eyeeardisease curine sante</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506085708_curine.jpg</column>
+            <column name="time">2017-09-23 15:13:13</column>
+        </table>
+        <table name="products">
+            <column name="product_id">103</column>
+            <column name="product_name">COMBIGAN</column>
+            <column name="details">It reduces the amount of fluid in the eye, which decreases pressure inside the eye.</column>
+            <column name="price">446</column>
+            <column name="c_price">510</column>
+            <column name="brand">Sante</column>
+            <column name="tags">drops medicines medicine eyeeardisease sante combigan</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506085974_combigan.jpg</column>
+            <column name="time">2017-09-23 15:13:41</column>
+        </table>
+        <table name="products">
+            <column name="product_id">105</column>
+            <column name="product_name">Voltral 50mg</column>
+            <column name="details">Used in treatment of muscular-skeletal disorders, arthritis, osteoarthrosis (joint disease), ankylosing spondylitis (type of arthritis), and acute gout (type of arthritis).
+</column>
+            <column name="price">110</column>
+            <column name="c_price">128</column>
+            <column name="brand">NOVARTIS</column>
+            <column name="tags">bonesjointsmusclesdisease medicines tablet tablets voltral novartis</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506087463_voltral.jpg</column>
+            <column name="time">2017-09-23 15:14:18</column>
+        </table>
+        <table name="products">
+            <column name="product_id">106</column>
+            <column name="product_name">Nuberol Forte</column>
+            <column name="details"> the combined analgesic effect of Paracetamol and the muscle relaxant action of Orphenadrine Citrate provides in-depth relief from pain associated with Skeletal muscle Spasm</column>
+            <column name="price">20</column>
+            <column name="c_price">35</column>
+            <column name="brand">SEARLE</column>
+            <column name="tags">bonesjointsmusclesdisease medicines tablet tablets nuberolforte nuberol searle</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506087666_nuberol.jpg</column>
+            <column name="time">2017-09-23 15:14:51</column>
+        </table>
+        <table name="products">
+            <column name="product_id">107</column>
+            <column name="product_name"> GLUCOPHAGE 500MG</column>
+            <column name="details">Glucophage (Metformin) is an oral diabetes medicine that helps control blood sugar levels.Glucophage is used to improve blood sugar control in people with Type 2 Diabetes. It is sometimes used in combination with insulin or other medications.</column>
+            <column name="price">12</column>
+            <column name="c_price">16</column>
+            <column name="brand">MERCK</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets merck glucophage metformin</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506087924_glucophage.jpg</column>
+            <column name="time">2017-09-23 15:15:23</column>
+        </table>
+        <table name="products">
+            <column name="product_id">108</column>
+            <column name="product_name">Gouric 80mg</column>
+            <column name="details">Elevated blood uric acid levels also can cause kidney disease and kidney stones. Febuxostat prevents the production of uric acid by blocking the activity of the enzyme (xanthine oxidase) that converts purines to uric acid. </column>
+            <column name="price">300</column>
+            <column name="c_price">350</column>
+            <column name="brand">Pharmevo</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets gouric pharmevo</column>
+            <column name="product_type">medicines tablet tablets</column>
+            <column name="image">1506088420_gouric80.jpg</column>
+            <column name="time">2017-09-23 15:16:02</column>
+        </table>
+        <table name="products">
+            <column name="product_id">109</column>
+            <column name="product_name">BENCLIN GEL 10G</column>
+            <column name="details">It is an antibiotic that stops the growth of acne-causing bacteria. Benclin can also stop the growth of bacteria as well as reduce oil production in the skin, helping keep your pores open.</column>
+            <column name="price">265</column>
+            <column name="c_price">300</column>
+            <column name="brand">Sante</column>
+            <column name="tags">ointment medicines medicine skinhairdisease benclin sante</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506092652_benclin.jpg</column>
+            <column name="time">2017-09-23 15:21:50</column>
+        </table>
+        <table name="products">
+            <column name="product_id">110</column>
+            <column name="product_name">HUMALOG MIX 25 CARTRIDGE</column>
+            <column name="details">Humalog Mix (75% Insulin Lispro Protamine Suspension And 25% Insulin Lispro Injection, rDNA Origin) is used to treat patients who suffer from diabetes, and patients who face difficulty in controlling their glucose. It is prescribed when alone diet and phy</column>
+            <column name="price">2000</column>
+            <column name="c_price">2395</column>
+            <column name="brand">Lilly</column>
+            <column name="tags">liverkidneydisease medicines vial humalog lilly humalogcartridge</column>
+            <column name="product_type">medicines vial</column>
+            <column name="image">1506096088_humalog.jpg</column>
+            <column name="time">2017-09-23 15:22:47</column>
+        </table>
+        <table name="products">
+            <column name="product_id">111</column>
+            <column name="product_name">BETADERM OINTMENT 15GM</column>
+            <column name="details"> It is used to treat skin irritation and itch caused by skin conditions such as eczema, psoriasis, contact dermatitis, and seborrhea. It works by reducing redness, inflammation, swelling, and irritation of the skin.</column>
+            <column name="price">35</column>
+            <column name="c_price">75</column>
+            <column name="brand">Atco</column>
+            <column name="tags">ointment medicines medicine skinhairdisease atco betaderm</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506099844_betaderm.jpg</column>
+            <column name="time">2017-09-23 15:23:46</column>
+        </table>
+        <table name="products">
+            <column name="product_id">112</column>
+            <column name="product_name">DERMA CLIN FORTE</column>
+            <column name="details">It is used to treat light brown patches and freckles on skin.</column>
+            <column name="price">375</column>
+            <column name="c_price">425</column>
+            <column name="brand">Derma Techno</column>
+            <column name="tags">ointment medicines medicine skinhairdisease dermaclinforte derma dermatechno</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506101086_derma.jpg</column>
+            <column name="time">2017-09-23 15:25:26</column>
+        </table>
+        <table name="products">
+            <column name="product_id">113</column>
+            <column name="product_name">HAIR MAX PLUS 5%</column>
+            <column name="details">Hair Max Plus Topical Solution is indicated for the treatment of androgenetic alopecia. At least four months of twice daily application of Hair Max Plus are generally required before evidence of hair growth can be expected.</column>
+            <column name="price">575</column>
+            <column name="c_price">700</column>
+            <column name="brand">Sante</column>
+            <column name="tags">ointment medicines medicine skinhairdisease hairmax sante hairmaxplus</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506101515_HAIR MAX PLUS 5%.jpg</column>
+            <column name="time">2017-09-23 15:26:15</column>
+        </table>
+        <table name="products">
+            <column name="product_id">114</column>
+            <column name="product_name">SYNALAR 30GM OINTMENT</column>
+            <column name="details">This medication is used to treat a variety of skin conditions (e.g., eczema, dermatitis, allergies, rash). Fluocinolone reduces the swelling, itching, and redness that can occur in these types of conditions. </column>
+            <column name="price">97</column>
+            <column name="c_price">130</column>
+            <column name="brand">PharmHealth</column>
+            <column name="tags">ointment medicines medicine skinhairdisease pharmhealth synalar</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506101692_synalar.jpg</column>
+            <column name="time">2017-09-23 15:27:41</column>
+        </table>
+        <table name="products">
+            <column name="product_id">115</column>
+            <column name="product_name">NERISONE FORTE OINTMENT 10GM</column>
+            <column name="details">It is used to reduce redness and to relieve inflammation and itching associated with skin conditions such as those caused by contact or allergic </column>
+            <column name="price">139</column>
+            <column name="c_price">200</column>
+            <column name="brand">Bayer</column>
+            <column name="tags">ointment medicines medicine skinhairdisease nerisoneforte bayer</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506101846_NERISONE FORTE OINTMENT 10GM.jpg</column>
+            <column name="time">2017-09-23 15:28:03</column>
+        </table>
+        <table name="products">
+            <column name="product_id">116</column>
+            <column name="product_name">Hitone</column>
+            <column name="details">It is used to treat inflammation of the skin caused by a number of conditions such as allergic reactions</column>
+            <column name="price">910</column>
+            <column name="c_price">1100</column>
+            <column name="brand">Crystolite</column>
+            <column name="tags">ointment medicines medicine skinhairdisease crystolite hitone</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506102674_hitone.jpg</column>
+            <column name="time">2017-09-23 15:28:25</column>
+        </table>
+        <table name="products">
+            <column name="product_id">117</column>
+            <column name="product_name">Hair Vit</column>
+            <column name="details">It is used to treat hair fall and makes your hair stronger.</column>
+            <column name="price">965</column>
+            <column name="c_price">1200</column>
+            <column name="brand">RobinsonPharma</column>
+            <column name="tags">tablets tablet medicines medicine skinhairdisease robinsonpharma hairvit</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1506103124_hair vit.jpg</column>
+            <column name="time">2017-09-23 15:28:52</column>
+        </table>
+        <table name="products">
+            <column name="product_id">118</column>
+            <column name="product_name">Arinac Syrup</column>
+            <column name="details">ARINAC is produced by Abbott and this series contains ARINAC Syrup, ARINAC TAB and ARINAC Forte. ARINAC is being given for the symptomatic relief of Flu, Fever, Cold, Nasal Congestion, Sinusitis and Headache etc. If you are facing Cold, Fever and Flu, all</column>
+            <column name="price">65</column>
+            <column name="c_price">70</column>
+            <column name="brand">Abbott</column>
+            <column name="tags">medicines syrup syrups allergycoldcoughdisease sale arinac abbott</column>
+            <column name="product_type">Medicines Syrup</column>
+            <column name="image">1506243787_arinac.png</column>
+            <column name="time">2017-09-24 09:03:07</column>
+        </table>
+        <table name="products">
+            <column name="product_id">119</column>
+            <column name="product_name">Getryl 2mg</column>
+            <column name="details">Getryl (Glimepiride) tablets are oral anti-hyperglycemic drug, prescribed for the management of type 2 diabetes mellitus, when alone diet and physical activity are not sufficient. Available as normal tablets or sustained-release form, this product is suit</column>
+            <column name="price">80</column>
+            <column name="c_price">95</column>
+            <column name="brand">Getz pharma</column>
+            <column name="tags">tablets medicines tablet liverkidneydisease getryl getzpharma</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506248262_getryl.jpg</column>
+            <column name="time">2017-09-24 10:17:42</column>
+        </table>
+        <table name="products">
+            <column name="product_id">120</column>
+            <column name="product_name">Amaryl 4mg</column>
+            <column name="details">Amaryl (Glimepiride) tablets are oral anti-hyperglycemic drug, prescribed for the management of type 2 diabetes mellitus, when alone diet and physical activity are not sufficient. Available as normal tablets or sustained-release form, this product is suit</column>
+            <column name="price">900</column>
+            <column name="c_price">935</column>
+            <column name="brand">Sanofi</column>
+            <column name="tags">medicines tablet tablets diabetesdisease amaryl sanofi</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506248619_amaryl.jpg</column>
+            <column name="time">2017-09-24 10:23:39</column>
+        </table>
+        <table name="products">
+            <column name="product_id">121</column>
+            <column name="product_name">Sita-Met 50/500mg</column>
+            <column name="details">SITA-Met (Sitaglitin+Metformin) is a combination medicine that is used together with diet and exercise to improve blood sugar control in adults with Type 2 Diabetes mellitus.
+</column>
+            <column name="price">334</column>
+            <column name="c_price">395</column>
+            <column name="brand">CCL</column>
+            <column name="tags">medicines tablet tablets diabetesdisease sitamet CCL</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506248847_sitamet.jpg</column>
+            <column name="time">2017-09-24 10:27:27</column>
+        </table>
+        <table name="products">
+            <column name="product_id">122</column>
+            <column name="product_name">Maxflow 0.4mg</column>
+            <column name="details">Tamsulosin relaxes the muscles in the prostate , making it easier to urinate. Tamsulosin is used to improve urination  with benign prostatic hyperplasia.</column>
+            <column name="price">700</column>
+            <column name="c_price">745</column>
+            <column name="brand">CCL</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets maxflow CCL</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506249227_maxflow.jpg</column>
+            <column name="time">2017-09-24 10:33:47</column>
+        </table>
+        <table name="products">
+            <column name="product_id">123</column>
+            <column name="product_name">Galvus 50MG</column>
+            <column name="details">Galvus (Vildagliptin) tablets are oral antihyperglycemic drug, prescribed for the management of type 2 diabetes mellitus, when alone diet and physical activity are not sufficient. Available as normal tablets or in combination form, this product is suitabl</column>
+            <column name="price">720</column>
+            <column name="c_price">736</column>
+            <column name="brand">NOVARTIS</column>
+            <column name="tags">medicines tablet tablets diabetesdisease galvus novartis</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506249466_galvus.jpg</column>
+            <column name="time">2017-09-24 10:37:46</column>
+        </table>
+        <table name="products">
+            <column name="product_id">124</column>
+            <column name="product_name"> Mixtard 30 vial</column>
+            <column name="details">Mixtard 30 (70% Insulin Isophane/30% Human Insulin) is used to improve blood sugar control in adults and children with Diabetes Mellitus (Type 1 and Type 2) and Diabetic Ketoacidosis</column>
+            <column name="price">530</column>
+            <column name="c_price">545</column>
+            <column name="brand">novo nordisk</column>
+            <column name="tags">medicines vial diabetesdisease mixtard novonordisk</column>
+            <column name="product_type">medicines vial</column>
+            <column name="image">1506249678_mixtard.jpg</column>
+            <column name="time">2017-09-24 10:41:18</column>
+        </table>
+        <table name="products">
+            <column name="product_id">125</column>
+            <column name="product_name">Trevia-Met 50/1000mg</column>
+            <column name="details">Trevia-Met (Sitaglitin+Metformin) is a combination medicine that is used together with diet and exercise to improve blood sugar control in adults with Type 2 Diabetes mellitus.
+</column>
+            <column name="price">300</column>
+            <column name="c_price">345</column>
+            <column name="brand">Getz pharma</column>
+            <column name="tags">medicines tablet tablets diabetesdisease treviamet Getzpharma </column>
+            <column name="product_type">medicines tablet </column>
+            <column name="image">1506249847_treviamet.jpg</column>
+            <column name="time">2017-09-24 10:44:07</column>
+        </table>
+        <table name="products">
+            <column name="product_id">126</column>
+            <column name="product_name">Biolan gel</column>
+            <column name="details">Eye drops containing no preservatives, used for hydration for the feelings of dryness, burning and eye fatigue caused by dust, smoke, dry heat, air conditioning, use of contact lenses.</column>
+            <column name="price">368</column>
+            <column name="c_price">410</column>
+            <column name="brand">gsk</column>
+            <column name="tags">drops medicines medicine eyeeardisease gsk Biolangel</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506251074_biolan.jpg</column>
+            <column name="time">2017-09-24 11:04:34</column>
+        </table>
+        <table name="products">
+            <column name="product_id">127</column>
+            <column name="product_name">Eyefem</column>
+            <column name="details">This medication is used to treat certain eye conditions due to inflammation or injury. Fluorometholone works by relieving symptoms such as swelling, redness, and itching. It belongs to a class of drugs known as corticosteroids.</column>
+            <column name="price">60</column>
+            <column name="c_price">100</column>
+            <column name="brand">Kobec</column>
+            <column name="tags">drops medicines medicine eyeeardisease kobec eyefem </column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506251525_eyefem.jpg</column>
+            <column name="time">2017-09-24 11:12:05</column>
+        </table>
+        <table name="products">
+            <column name="product_id">128</column>
+            <column name="product_name">Napchon forte</column>
+            <column name="details">Naphazoline is a vasoconstrictor. It works by narrowing swollen blood vessels in the eyes to reduce eye redness.
+
+Naphazoline ophthalmic (for the eye) is for temporary relief of minor eye redness or discomfort caused by minor irritants.
+
+Naphazoline o</column>
+            <column name="price">100</column>
+            <column name="c_price">150</column>
+            <column name="brand">Alcon</column>
+            <column name="tags">drops medicines medicine eyeeardisease napchonforte alcon</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506252117_NAPHCON FORTE.jpg</column>
+            <column name="time">2017-09-24 11:21:57</column>
+        </table>
+        <table name="products">
+            <column name="product_id">129</column>
+            <column name="product_name">AMGYDEX</column>
+            <column name="details">It is used to treat bacterial infections. Amgydex is a steroid. Amgydex ophthalmic is used to treat the swelling associated with bacterial infections of the eye. Tobramycin and Amgydex ophthalmic is used to treat bacterial infections of the eyes. Tobramyc</column>
+            <column name="price">150</column>
+            <column name="c_price">200</column>
+            <column name="brand">Kobec</column>
+            <column name="tags">drops medicines medicine eyeeardisease amgydex kobec</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506252469_AMGYDEX.jpg</column>
+            <column name="time">2017-09-24 11:27:49</column>
+        </table>
+        <table name="products">
+            <column name="product_id">130</column>
+            <column name="product_name">Blink fresh</column>
+            <column name="details">This medication is used to relieve dry, irritated eyes. Common causes for dry eyes include wind, sun, heating/air conditioning, computer use/reading, and certain medications.</column>
+            <column name="price">59</column>
+            <column name="c_price">70</column>
+            <column name="brand">Sante</column>
+            <column name="tags">drops medicines medicine eyeeardisease blinkfresh sante</column>
+            <column name="product_type">drops medicines medicine</column>
+            <column name="image">1506252687_blink.jpg</column>
+            <column name="time">2017-09-24 11:31:27</column>
+        </table>
+        <table name="products">
+            <column name="product_id">131</column>
+            <column name="product_name">Conaz</column>
+            <column name="details">It works by preventing the growth of fungus.Ketoconazole 2% shampoo is also used to treat a skin condition known as pityriasis (tinea versicolor), a fungal infection that causes a lightening or darkening of the skin of the neck, chest, arms, or legs.</column>
+            <column name="price">200</column>
+            <column name="c_price">250</column>
+            <column name="brand">Atco</column>
+            <column name="tags">ointment medicines medicine skinhairdisease conaz atco</column>
+            <column name="product_type">ointment medicines medicine</column>
+            <column name="image">1506253084_conaz.jpg</column>
+            <column name="time">2017-09-24 11:38:04</column>
+        </table>
+        <table name="products">
+            <column name="product_id">132</column>
+            <column name="product_name">PHILIPS NEBULIZER</column>
+            <column name="details">It is a drug delivery device used to administer medication in the form of a mist inhaled into the lungs. Nebulizers are commonly used for the treatment of cystic fibrosis, asthma, COPD and other respiratory diseases or disorders.</column>
+            <column name="price">14,999</column>
+            <column name="c_price">16,000</column>
+            <column name="brand">Philips</column>
+            <column name="tags">equip equipment treatmentpumps philipsnebulizer philips</column>
+            <column name="product_type">equip equipment</column>
+            <column name="image">1506253999_nebulizer.jpg</column>
+            <column name="time">2017-09-24 11:53:19</column>
+        </table>
+        <table name="products">
+            <column name="product_id">133</column>
+            <column name="product_name">OMRON COMPRESSOR NEBULIZER</column>
+            <column name="details">Nebulizers are commonly used for the treatment of cystic fibrosis, asthma, COPD and other respiratory diseases or disorders.</column>
+            <column name="price">5,199</column>
+            <column name="c_price">8000</column>
+            <column name="brand">omron</column>
+            <column name="tags">equip equipment treatmentpumps omroncompressornebulizer omron</column>
+            <column name="product_type">equip equipment</column>
+            <column name="image">1506254317_omron nub.jpg</column>
+            <column name="time">2017-09-24 11:58:37</column>
+        </table>
+        <table name="products">
+            <column name="product_id">134</column>
+            <column name="product_name">Xatral SR 5mg</column>
+            <column name="details">Xatral is used to treat a medical condition in men called Benign Prostatic Hyperplasia or BPH</column>
+            <column name="price">700</column>
+            <column name="c_price">750</column>
+            <column name="brand">SANOFI</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets sanofi xatral</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506501773_xatral.jpg</column>
+            <column name="time">2017-09-27 08:42:53</column>
+        </table>
+        <table name="products">
+            <column name="product_id">135</column>
+            <column name="product_name">Diamicron MR 60mg</column>
+            <column name="details">Diamicron MR tablets (Gliclazide) is oral anti-hyperglycemic drug, prescribed for the management of type 2 Diabetes Mellitus. Available as modified release form, this product is suitable for monotherapy as well as in combination with other drugs. It is us</column>
+            <column name="price">159</column>
+            <column name="c_price">165</column>
+            <column name="brand">SERVIER</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets diamicron servier</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506501978_diamicron.jpg</column>
+            <column name="time">2017-09-27 08:46:18</column>
+        </table>
+        <table name="products">
+            <column name="product_id">136</column>
+            <column name="product_name">Evopride 2MG</column>
+            <column name="details">Evopride (Glimepiride) tablets are oral anti-hyperglycemic drug, prescribed for the management of type 2 diabetes mellitus, when alone diet and physical activity are not sufficient. Available as normal tablets or sustained-release form, this product is su</column>
+            <column name="price">239</column>
+            <column name="c_price">295</column>
+            <column name="brand">Pharmevo</column>
+            <column name="tags">liverkidneydisease medicines tablet tablets evopride pharmevo</column>
+            <column name="product_type">medicines tablet</column>
+            <column name="image">1506502156_evopride.jpg</column>
+            <column name="time">2017-09-27 08:49:16</column>
+        </table>
+        <table name="products">
+            <column name="product_id">137</column>
+            <column name="product_name">MOTILIUM 10MG</column>
+            <column name="details">This medicine is used in adults and in children to treat nausea (feeling sick) and vomiting (being sick).</column>
+            <column name="price">44</column>
+            <column name="c_price">80</column>
+            <column name="brand">aspen pharma</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease motilium10mg aspenpharma</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1506522395_motillium.jpg</column>
+            <column name="time">2017-09-27 14:26:35</column>
+        </table>
+        <table name="products">
+            <column name="product_id">138</column>
+            <column name="product_name">GAVISCON SYRUP</column>
+            <column name="details">This medication is used to treat the symptoms of too much stomach acid such as stomach upset, heartburn, and acid indigestion.</column>
+            <column name="price">75</column>
+            <column name="c_price">125</column>
+            <column name="brand">Reckitt benckiser</column>
+            <column name="tags">syrups syrup medicines medicine stomachdisease gavisconsyrup reckittbenckiser</column>
+            <column name="product_type">syrups syrup medicines medicine</column>
+            <column name="image">1506522659_gaviscon.jpg</column>
+            <column name="time">2017-09-27 14:30:59</column>
+        </table>
+        <table name="products">
+            <column name="product_id">139</column>
+            <column name="product_name">ENTAMIZOLE </column>
+            <column name="details">Entamizole Tablet is used for Stomach infection, Intestinal infection, Amoebiasis, Balantidiasis, Blood infection, Antibiotic associated colitis and other conditions. Entamizole Tablet may also be used for purposes not listed in this medication guide.</column>
+            <column name="price">76</column>
+            <column name="c_price">110</column>
+            <column name="brand">Abbott</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease entamizole abbott</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1506522961_entamizole.jpg</column>
+            <column name="time">2017-09-27 14:36:01</column>
+        </table>
+        <table name="products">
+            <column name="product_id">140</column>
+            <column name="product_name">IPRIDE</column>
+            <column name="details">Ipride is used to treat heartburn, feeling of stomach fullness and bloating, upper abdominal pain, nausea, vomiting and loss of appetite (anorexia). </column>
+            <column name="price">150</column>
+            <column name="c_price">250</column>
+            <column name="brand">Horizon Pharma</column>
+            <column name="tags">tablets tablet medicines medicine stomachdisease ipride horizonpharma</column>
+            <column name="product_type">tablets tablet medicines medicine</column>
+            <column name="image">1506523219_ipride.jpg</column>
+            <column name="time">2017-09-27 14:40:19</column>
+        </table>
+    </database>
+</pma_xml_export>

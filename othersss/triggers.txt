@@ -1,0 +1,56 @@
+CREATE TRIGGER `ucreate_history` 
+AFTER INSERT ON `admin_login` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO user_create_history (user_name)
+VALUES (new.user_name);
+END
+
+
+CREATE TRIGGER `udelete_history` 
+AFTER DELETE ON `admin_login` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO user_delete_history (user_name)
+VALUES (old.user_name);
+END
+
+CREATE TRIGGER `ocreate_history` 
+AFTER INSERT ON `orders` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO order_create_history (order_id,p_names,cus_name)
+VALUES (new.order_id,new.p_names,new.cus_name);
+END
+
+CREATE TRIGGER `odelete_history` 
+AFTER DELETE ON `orders` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO order_delete_history (order_id,p_names,cus_name)
+VALUES (old.order_id,old.p_names,old.cus_name);
+END
+
+CREATE TRIGGER `pcreate_history` 
+AFTER INSERT ON `products` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO product_create_history (product_id,product_name)
+VALUES (new.product_id,new.product_name);
+END
+
+CREATE TRIGGER `pdelete_history` 
+AFTER DELETE ON `products` 
+FOR EACH ROW 
+BEGIN
+INSERT INTO product_delete_history (product_id,product_name)
+VALUES (old.product_id,old.product_name);
+END
+
+CREATE TRIGGER `ulogin_history` 
+AFTER UPDATE ON 'admin_login' 
+FOR EACH ROW 
+BEGIN
+INSERT INTO user_login_history (user_name)
+VALUES (new.user_name);
+END
